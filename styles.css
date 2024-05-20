@@ -1,0 +1,334 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #CAD2C5;
+    color: #354F52;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    padding-bottom: 70px; /* Espacio para el footer */
+}
+
+header {
+    background-color: #52796F;
+    padding: 20px 0px 25px 0px;
+    text-align: center;
+}
+
+header p {
+    font-size: 13px;
+    color: #CAD2C5; /* Color de texto en el header */
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #CAD2C5; /* Color de texto en el header */
+}
+
+/*==========================ANIMACIÓN PARA MÓDULOS STARTS=====================================================================================*/
+.modulos {
+    margin: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CAD2C5;
+    padding: 20px;
+}
+
+.modulos ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 3em; /* Espacio entre los elementos */
+}
+
+.modulos li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: #354F52;
+    border-left: 0.08em solid;
+    position: relative;
+    cursor: pointer;
+}
+
+.modulos li::before,
+.modulos li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+.modulos li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+.modulos li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+.modulos li span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #52796F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+    color: #CAD2C5; /* Color de texto en los módulos */
+}
+
+.modulos li:hover span {
+    transform: translateX(0.15em);
+}
+
+.modulos a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+/*==========================ANIMACIÓN PARA MODULOS ENDS=====================================================================================*/
+.text-info {
+    background-color: #CAD2C5;
+    text-align: left;
+    padding: 20px 17vmax 10px 23vmax; /* Para que todo se vea más o menos en la mitad (un poco más a la izquierda) */
+    max-width: 80vw; /*limitar el ancho del contenedor */
+}
+
+.text-info p {
+    max-width: 100vmax; /* Cambia este valor según el ancho deseado */
+    color: #354F52; /* Color de texto en .text-info */
+}
+
+.infoButton:hover {
+    background-color: #84A98C;
+}
+
+footer {
+    background-color: #52796F;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-top: 0; /* Eliminar margen superior */
+}
+
+footer p {
+    margin: 0;
+    color: #CAD2C5; /* Color de texto en el footer */
+}
+
+p {
+    padding-left: 20px;
+    color: #354F52; /* Color de texto general */
+}
+
+/* PHP CRUD */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #52796F;
+    color: #CAD2C5;
+}
+/* =============================== GESTIÓN CRUD STARTS =================================== */
+/* Estilos específicos para crud.php */
+.crud-container .form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.crud-container section {
+    background-color: #354F52;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    color: #CAD2C5; /* Color de texto en crud-container */
+}
+
+.crud-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #52796F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.crud-container button:hover {
+    background-color: #84A98C;
+}
+
+.crud-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crud-container th, .crud-container td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+/* =============================== GESTIÓN CRUD ENDS =================================== */
+
+/* =============================== (Funcionalidad de enlaces en el header y footer) STARTS =================================== */
+/* "Volver a inicio en el footer | "Módulos" & "Base de datos" en el header*/
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.links_footer {
+    margin: 0px 17px;
+}
+
+.links_footer a {
+    color: #CAD2C5;
+    text-decoration: none;
+}
+
+.links_footer a:hover {
+    color: #84A98C;
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.links_Inicio {
+    margin: 0px 17px;
+}
+
+.links_Inicio a {
+    color: #CAD2C5;
+    text-decoration: none;
+}
+
+.links_Inicio a:hover {
+    color: #84A98C;
+    text-decoration: underline;
+}
+
+/* =============================== (Funcionalidad de enlaces en el header y footer) ENDS =================================== */
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.highlight-section {
+    animation: fadeIn 0.35s ease-in-out;
+}
+
+.highlight-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.highlight-column {
+    flex: 1;
+    max-width: 1200px;
+}
+
+.highlight-wrap {
+    padding: 20px;
+    background-color: #dfe3dc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container img {
+    margin-right: 20px;
+    width: 450px; /* Ajusta este valor según el tamaño deseado */
+    height: 350px; /* Mantiene la proporción de la imagen */
+}
+
+.flex-container .highlight-heading {
+    max-width: 100%; /* Ajusta este valor para controlar el ancho del texto */
+}
+
+.highlight-heading h2 {
+    color: #354F52;
+}
+
+.highlight-heading p {
+    font-weight: 400;
+}
+
+.button-wrapper {
+    margin-top: 10px;
+}
+
+.highlight-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #52796F;
+    color: #CAD2C5;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-button:hover {
+    background-color: #84A98C;
+}
+
+.content{
+    background-color: #ff44d0;
+}
+
+#infoSanra{
+    background-color: #84A98C;
+}
+
+.infoModulos {
+    padding: 30px;
+}
+
+#h1center{
+    color: #354F52;
+    text-align: center;
+}
+
+.h2center{
+    text-align: center;
+}
