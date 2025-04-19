@@ -4,13 +4,9 @@ Página web simple utilizando Html. Css. | Bases de datos simple usando MySql , 
 
 
 ## 🔧 Visualización 
-1. **Online**: Abre la [demo en GitHub Pages](https://menesex.github.io/GraphFuntions/).  
-2. **Local**:  
-   ```bash
-   git clone https://github.com/Menesex/GraphFuntions.git
-   cd GraphFuntions
-   open index.html
-   ```
+1. **Online**: Abre la [demo en GitHub Pages](https://menesex.github.io/ruiz_pag/).  
+
+
 ## PostData
 👨🏻‍🎓​ (Proyecto universitario, en 2024-1)
 🥶​ [Tiene muchos errores]
